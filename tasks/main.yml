@@ -4,6 +4,11 @@
   tags:
       - always
 
+- name: roles and users
+  include_vars: "users_and_roles.yml"
+  tags:
+    - always
+
 - name: check-set-parameters
   include: elasticsearch-parameters.yml
   tags:
